@@ -150,7 +150,6 @@ func (s *server) checkSessionValid(ctx *gin.Context) bool {
 
 const requestIdHeaderKey = "JMS-KoKo-Request-ID"
 
-// 不需要校验 cookie和session
 func (s *server) sftpHostConnectorView(ctx *gin.Context) {
 	reqId := ctx.GetHeader(requestIdHeaderKey)
 	if reqId == "" {
